@@ -18,7 +18,8 @@
 	}
 
 	// Reactive Properties
-	$: classesSidebarLeft = $page.url.pathname === '/' ? 'w-0' : 'w-0 lg:w-64';
+	//$: classesSidebarLeft = $page.url.pathname === '/' ? 'w-0' : 'w-0 lg:w-64';
+	$: classesSidebarLeft = $page.url.pathname[0] === '/' ? 'w-0' : 'w-0 lg:w-64';
 </script>
 
 <!-- Drawer -->
